@@ -3,9 +3,12 @@
 <head>
 <meta charset="utf-8">
 <title>GLSL Shader Gallery</title>
+
 <link rel="stylesheet" href="style.css">
 
-<script src="https://cdn.jsdelivr.net/npm/glslcanvas@latest/dist/GlslCanvas.min.js"></script></head>
+<script src="https://cdn.jsdelivr.net/npm/glslcanvas@latest/dist/GlslCanvas.min.js"></script>
+
+</head>
 
 <body>
 
@@ -13,28 +16,18 @@
 
 <div class="gallery">
 
-<!-- add works with card -->
 <div class="card">
 <h2>Cloth Like</h2>
-<!-- <img src="shaders/cloth_like/preview.png"> -->
-<canvas class="glslCanvas" width="300" height="300">
 
-#ifdef GL_ES
-precision mediump float;
-#endif
-
-uniform vec2 u_resolution;
-uniform float u_time;
-
-void main(){
-vec2 st = gl_FragCoord.xy/u_resolution;
-vec3 col = vec3(st.x,st.y,abs(sin(u_time)));
-gl_FragColor = vec4(col,1.0);
-}
-
+<canvas class="glslCanvas"
+width="300"
+height="300"
+data-fragment-url="shaders/cloth_like/shader.frag">
 </canvas>
-</div>
 
+<img src="shaders/cloth_like/preview.png">
+
+</div>
 
 </div>
 

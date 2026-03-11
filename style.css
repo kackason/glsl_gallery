@@ -1,21 +1,26 @@
 body{
+    margin:0;
     background:#111;
     color:white;
     font-family:sans-serif;
     text-align:center;
 }
 
+h1{
+    margin:30px;
+}
+
 .gallery{
     display:grid;
-    grid-template-columns:repeat(auto-fit,300px);
-    gap:30px;
+    grid-template-columns:repeat(auto-fit,320px);
+    gap:40px;
     justify-content:center;
 }
 
 .card{
     background:#1e1e1e;
-    padding:10px;
-    border-radius:10px;
+    padding:15px;
+    border-radius:12px;
 }
 
 canvas{
@@ -25,5 +30,6 @@ canvas{
 
 img{
     width:100%;
+    margin-top:10px;
     border-radius:6px;
 }
