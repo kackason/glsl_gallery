@@ -132,7 +132,7 @@ https://kackason.github.io/glsl_gallery/
 ---
 
 ## Structure
-'''
+```
 glsl_gallery
 │
 ├ index.html (gallery site)
@@ -141,7 +141,7 @@ glsl_gallery
 │ │ ├ preview.png
 │ │ ├ shader.frag
 │ │ └ shader_shadertoy.frag
-'''
+```
 
 
 ---
