@@ -2,27 +2,200 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>GLSL Shader Gallery</title>
-<link rel="stylesheet" href="style.css">
+<title>GLSL Gallery</title>
 
-<script src="https://cdn.jsdelivr.net/npm/glslcanvas@0.2.6/dist/GlslCanvas.min.js"></script>
+<style>
+
+body{
+    background:#111;
+    color:white;
+    font-family:sans-serif;
+    text-align:center;
+}
+
+h1{
+    margin:40px;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,220px);
+    gap:30px;
+    justify-content:center;
+}
+
+.card{
+    background:#1c1c1c;
+    padding:10px;
+    border-radius:8px;
+}
+
+.card img{
+    width:200px;
+    border-radius:6px;
+}
+
+.links{
+    margin-top:8px;
+    font-size:14px;
+}
+
+a{
+    color:#7fdcff;
+    text-decoration:none;
+}
+
+a:hover{
+    text-decoration:underline;
+}
+
+</style>
 </head>
 
 <body>
 
-<h1>GLSL Shader Gallery</h1>
+<h1>GLSL Gallery</h1>
 
 <div class="gallery">
 
+<!-- caustics shader card -->
 <div class="card">
-<h2>Cloth Like</h2>
+<h3>Caustics</h3>
+<img src="shaders/caustics/preview.png">
+<div class="links">
+<a href="shaders/caustics/shader.frag">View Code</a><br>
+<a href="https://www.shadertoy.com/">Run on Shadertoy</a>
+</div>
+</div>
 
-<canvas class="glslCanvas"
-        width="300"
-        height="300"
-        data-fragment-url="shaders/cloth_like/shader.frag">
-</canvas>
+<!-- cloth_like shader card -->
+<div class="card">
+<h3>Cloth Like</h3>
+<img src="shaders/cloth_like/preview.png">
+<div class="links">
+<a href="shaders/cloth_like/shader.frag">View Code</a><br>
+<a href="https://www.shadertoy.com/view/NfsGWS">Run on Shadertoy</a>
+</div>
+</div>
 
+<!-- designed_plate shader card -->
+<div class="card">
+<h3>Designed Plate</h3>
+<img src="shaders/designed_plate/preview.png">
+<div class="links">
+<a href="shaders/designed_plate/shader.frag">View Code</a><br>
+<a href="https://www.shadertoy.com/view/NfsGWS">Run on Shadertoy</a>
+</div>
+</div>
+
+<!-- diagonal_stripes_tile shader card -->
+<div class="card">
+<h3>Diagonal Stripes Tile</h3>
+<img src="shaders/diagonal_stripes_tile/preview.png">
+<div class="links">
+<a href="shaders/diagonal_stripes_tile/shader.frag">View Code</a><br>
+<a href="https://www.shadertoy.com/view/NfsGWS">Run on Shadertoy</a>
+</div>
+</div>
+
+<!-- diamond_dast shader card -->
+<div class="card">
+<h3>Diamond Dust</h3>
+<img src="shaders/diamond_dast/preview.png">
+<div class="links">
+<a href="shaders/diamond_dast/shader.frag">View Code</a><br>
+<a href="https://www.shadertoy.com/view/NfsGWS">Run on Shadertoy</a>
+</div>
+</div>
+
+<!-- envelope shader card -->
+<div class="card">
+<h3>Envelope</h3>
+<img src="shaders/envelope/preview.png">
+<div class="links">
+<a href="shaders/envelope/shader.frag">View Code</a><br>
+<a href="https://www.shadertoy.com/view/fcl3WB">Run on Shadertoy</a>
+</div>
+</div>
+
+<!-- firework shader card -->
+<div class="card">
+<h3>Firework</h3>
+<img src="shaders/firework/preview.png">
+<div class="links">
+<a href="shaders/firework/shader.frag">View Code</a><br>
+<a href="https://www.shadertoy.com/view/fcsGDS">Run on Shadertoy</a>
+</div>
+</div>
+
+<!-- floating_tile shader card -->
+<div class="card">
+<h3>Floating Tile</h3>
+<img src="shaders/floating_tile/preview.png">
+<div class="links">
+<a href="shaders/floating_tile/shader.frag">View Code</a><br>
+<a href="https://www.shadertoy.com/view/NfsGWS">Run on Shadertoy</a>
+</div>
+</div>
+
+<!-- gradation_tile shader card -->
+<div class="card">
+<h3>Gradation Tile</h3>
+<img src="shaders/gradation_tile/preview.png">
+<div class="links">
+<a href="shaders/gradation_tile/shader.frag">View Code</a><br>
+<a href="https://www.shadertoy.com/view/fcsGDS">Run on Shadertoy</a>
+</div>
+</div>
+
+<!-- grid_rotation shader card -->
+<div class="card">
+<h3>Grid Rotation</h3>
+<img src="shaders/grid_rotation/preview.png">
+<div class="links">
+<a href="shaders/grid_rotation/shader.frag">View Code</a><br>
+<a href="https://www.shadertoy.com/view/fcsGDS">Run on Shadertoy</a>
+</div>
+</div>
+
+<!-- product_xy shader card -->
+<div class="card">
+<h3>Product XY</h3>
+<img src="shaders/product_xy/preview.png">
+<div class="links">
+<a href="shaders/product_xy/shader.frag">View Code</a><br>
+<a href="https://www.shadertoy.com/view/fcsGDS">Run on Shadertoy</a>
+</div>
+</div>
+
+<!-- rgb_diamond_cut shader card -->
+<div class="card">
+<h3>RGB Diamond Cut</h3>
+<img src="shaders/rgb_diamond_cut/preview.png">
+<div class="links">
+<a href="shaders/rgb_diamond_cut/shader.frag">View Code</a><br>
+<a href="https://www.shadertoy.com/view/fcsGDS">Run on Shadertoy</a>
+</div>
+</div>
+
+<!-- simple_wave shader card -->
+<div class="card">
+<h3>Simple Wave</h3>
+<img src="shaders/simple_wave/preview.png">
+<div class="links">
+<a href="shaders/simple_wave/shader.frag">View Code</a><br>
+<a href="https://www.shadertoy.com/view/fcsGDS">Run on Shadertoy</a>
+</div>
+</div>
+
+<!-- watching_cube shader card -->
+<div class="card">
+<h3>Watching Cube</h3>
+<img src="shaders/watching_cube/preview.png">
+<div class="links">
+<a href="shaders/watching_cube/shader.frag">View Code</a><br>
+<a href="https://www.shadertoy.com/view/fcsGDS">Run on Shadertoy</a>
+</div>
 </div>
 
 </div>
