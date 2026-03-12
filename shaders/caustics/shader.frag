@@ -1,10 +1,6 @@
-// Author:
-// Title:
-
 #ifdef GL_ES
 precision mediump float;
 #endif
-
 
 uniform float u_time; // time
 uniform vec2  u_resolution; // resolution
@@ -48,7 +44,7 @@ float cellularnoise(vec2 st){
     return dist * 0.6;
 }
                           
-void main(void){
+void main(){
 	vec2 st = (gl_FragCoord.xy * 2.0 - u_resolution) / u_resolution;
     vec3 blue = vec3(0.011,0.106,0.965);
     vec3 turquoise = vec3(0.133,0.835,0.975);
